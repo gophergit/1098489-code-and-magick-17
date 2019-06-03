@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62
+86">
+<g id="wizard">
+  <g id="wizard-coat" style="fill: #6589a4">
+    <polygon points="19 67 19 59 14 59 14 82 9 82 9 86 23 86 23
+67 19 67" />
+    <polygon points="19 59 19 67 23 67 23 86 48 86 48 54
+19 54 19 59" />
+  </g>
+  <polygon points="48 86 53 86 53 15 58 15 58 10 62
+10 62 5 58 5 58 10 48 10 48 5 43 5 43 10 48 10 48 14 48 86"
+fill="#be3827"/>
+  <polygon points="9 37 19 37 19 23 48 23 48 28 53 28 53 42 48 42
+48 51 14 51 14 46 9 46 9 37" fill="#fbd868"/>
+  <rect x="33" y="39" width="10"
+height="5" fill="#bec1c3"/>
+  <rect x="14" y="37" width="5" height="9"
+fill="#bec1c3"/>
+  <polygon points="48 39 48 44.34 43 44.34 43 49.69 33 49.69 33
+44.34 29 44.34 29 48.62 23 48.62 23 53.97 29 53.97 29 59.31 33 59.31 33 64.66 38
+64.66 38 70 43 70 43 64.66 48 64.66 48 53.97 53 53.97 53 48.62 57 48.62 57 39 48
+39" fill="#bec1c3"/>
+  <polygon points="0 47 9 47 9 38 19 38 19 24 48 24 48 28 53
+28 53 18 48 18 48 13 14 13 14 18 9 18 9 23 5 23 5 38 0 38 0 47"
+fill="#bec1c3"/>
+  <g id="wizard-eyes">
+    <rect x="28" y="33" width="5" height="5"/>
+    <rect x="43" y="33" width="5" height="5"/>
+  </g>
+  <polygon points="19 67 19 59 14 59 14 82 9 82 9 86 23 86
+23 67 19 67" fill="#fff" opacity="0.2"/>
+  <rect x="14" y="73" width="5" height="5"
+fill="#fbd868"/>
+  <rect x="48" y="63" width="5" height="5" fill="#fbd868"/>
+  <rect x="48" width="10" height="10" fill="#3aa2ca"/>
+  <rect x="52" width="5" height="5" fill="#acd5fb"/>
+</g>
+</svg>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Код и Магия</title>
+</head>
+<body>
+
+<header>
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62
+        86">
+    <g id="wizard">
+      <g id="wizard-coat">
+        <polygon points="19 67 19 59 14 59 14 82 9 82 9 86 23 86 23 67 19 67"/>
+        <polygon points="19 59 19 67 23 67 23 86 48 86 48 54 19 54 19 59"/>
+      </g>
+      <g id="wizard-head">
+        <polygon points="48 86 53 86 53 15 58 15 58 10 62 10 62 5 58 5 58 10 48 10 48 5 43 5 43 10 48 10 48 14 48 86"
+                 fill="#be3827"/>
+        <polygon points="9 37 19 37 19 23 48 23 48 28 53 28 53 42 48 42 48 51 14 51 14 46 9 46 9 37"
+                 fill="#fbd868"/>
+        <rect x="33" y="39" width="10" height="5" fill="#bec1c3"/>
+        <rect x="14" y="37" width="5" height="9" fill="#bec1c3"/>
+        <polygon
+          points="48 39 48 44.34 43 44.34 43 49.69 33 49.69 33 44.34 29 44.34 29 48.62 23 48.62 23 53.97 29 53.97 29 59.31 33 59.31 33 64.66 38 64.66 38 70 43 70 43 64.66 48 64.66 48 53.97 53 53.97 53 48.62 57 48.62 57 39 48 39"
+          fill="#bec1c3"/>
+        <polygon
+          points="0 47 9 47 9 38 19 38 19 24 48 24 48 28 53 28 53 18 48 18 48 13 14 13 14 18 9 18 9 23 5 23 5 38 0 38 0 47"
+          fill="#bec1c3"/>
+      </g>
+      <g id="wizard-eyes">
+        <rect x="28" y="33" width="5" height="5"/>
+        <rect x="43" y="33" width="5" height="5"/>
+      </g>
+      <g id="wizard-hands">
+        <polygon points="19 67 19 59 14 59 14 82 9 82 9 86 23 86
+          23 67 19 67" fill="#fff" opacity="0.2"/>
+        <rect x="14" y="73" width="5" height="5"
+              fill="#fbd868"/>
+        <rect x="48" y="63" width="5" height="5" fill="#fbd868"/>
+        <rect x="48" width="10" height="10" fill="#3aa2ca"/>
+        <rect x="52" width="5" height="5" fill="#acd5fb"/>
+      </g>
+    </g>
+  </svg>
+  <div class="header-clouds"></div>
+  <div class="header-fence"></div>
+  <div class="header-tree"></div>
+
+  <h1 class="header-title section-title">
+    Code&thinsp;and&thinsp;Magick
+    <img src="img/title-site.png" alt="Code and magick">
+  </h1>
+  <p class="header-description">
+    Это игра, где главного героя, которым вам предстоит управлять и изменять заклинаниями окружающий мир зовут
+    Пендальф Синий.
+    Вместе с ним вас ждет увлекательное приключение&hellip;
+  </p>
+
+  <div class="demo"></div>
+
+  <div class="setup-open">
+    <img src="./img/user-1.jpg" class="setup-open-icon">
+  </div>
+</header>
+
+<div class="overlay setup hidden">
+  <form class="setup-wizard-form"
+        method="post"
+        enctype="multipart/form-data"
+        autocomplete="off">
+
+    <div class="setup-title">
+      <div class="setup-user">
+        <div class="upload">
+          <img class="setup-user-pic" src="./img/user-1.jpg"/>
+          <input type="file" name="avatar">
+        </div>
+        <label>
+          <input type="text" name="username"
+                 maxlength="25" required
+                 class="setup-user-name" value="Синий Пендальф"/>
+        </label>
+      </div>
+
+      <span class="setup-close">&times;</span>
+    </div>
+
+
+    <div class="setup-artifacts-shop">
+      <div class="setup-artifacts-cell"><img src="img/icon-star.png" alt="Star" width="65" height="50" draggable="true">
+      </div>
+      <div class="setup-artifacts-cell"></div>
+      <div class="setup-artifacts-cell"></div>
+      <div class="setup-artifacts-cell"></div>
+
+      <div class="setup-artifacts-cell"></div>
+      <div class="setup-artifacts-cell"></div>
+      <div class="setup-artifacts-cell"></div>
+      <div class="setup-artifacts-cell"></div>
+    </div>
+
+    <div class="setup-player">
+      <div class="setup-wizard-appearance">
+        <div class="setup-wizard-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 86" class="setup-wizard">
+            <g class="wizard">
+              <use xlink:href="#wizard-coat" class="wizard-coat" style="fill: #6589a4"></use>
+              <use xlink:href="#wizard-head" class="wizard-head"></use>
+              <use xlink:href="#wizard-eyes" class="wizard-eyes"></use>
+              <use xlink:href="#wizard-hands" class="wizard-hands"></use>
+            </g>
+          </svg>
+        </div>
+        <input type="hidden" name="coat-color" value="rgb(101, 137, 164)">
+        <input type="hidden" name="eyes-color" value="black">
+      </div>
+
+      <div class="setup-fireball-wrap">
+        <div class="setup-fireball"></div>
+        <input type="hidden" name="fireball-color" value="#ee4830">
+      </div>
+
+      <div class="setup-artifacts" dropzone="move">
+        <div class="setup-artifacts-cell"></div>
+        <div class="setup-artifacts-cell"></div>
+        <div class="setup-artifacts-cell"></div>
+        <div class="setup-artifacts-cell"></div>
+
+        <div class="setup-artifacts-cell"></div>
+        <div class="setup-artifacts-cell"></div>
+        <div class="setup-artifacts-cell"></div>
+        <div class="setup-artifacts-cell"></div>
+
+        <div class="setup-artifacts-cell"></div>
+        <div class="setup-artifacts-cell"></div>
+        <div class="setup-artifacts-cell"></div>
+        <div class="setup-artifacts-cell"></div>
+
+        <div class="setup-artifacts-cell"></div>
+        <div class="setup-artifacts-cell"></div>
+        <div class="setup-artifacts-cell"></div>
+        <div class="setup-artifacts-cell"></div>
+      </div>
+    </div>
+
+    <div class="setup-footer">
+      <div class="setup-similar hidden">
+
+        <h4 class="setup-similar-title">Похожие персонажи</h4>
+
+        <div class="setup-similar-list"><!--Список похожих персонажей--></div>
+      </div>
+
+      <button class="button setup-submit">Сохранить</button>
+    </div>
+  </form>
+</div>
+
+<footer>
+  <p><a href="http://htmlacademy.ru" class="footer-link"><img src="img/htmlacademy-logo.png" alt="HTML Academy"
+                                                              width="130">Сделано в HTML Academy</a>в 2017 году</p>
+</footer>
+
+<template id="similar-wizard-template" style="display: none">
+  <div class="setup-similar-item">
+    <div class="setup-similar-content">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 86" class="setup-similar-wizard">
+        <g class="wizard">
+          <use xlink:href="#wizard-coat" class="wizard-coat"></use>
+          <use xlink:href="#wizard-head" class="wizard-head"></use>
+          <use xlink:href="#wizard-eyes" class="wizard-eyes"></use>
+          <use xlink:href="#wizard-hands" class="wizard-hands"></use>
+        </g>
+      </svg>
+    </div>
+    <p class="setup-similar-label">Петр Петров</p>
+  </div>
+</template>
+
+<script src="js/game.js"></script>
+
+</body>
+</html>
